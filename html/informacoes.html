@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar Informações - Intelicampo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/Css/styleInformações.css" rel="stylesheet">
+    <link rel="icon" href="../assets/Imagens/Intelicampo.png" type="image/png">
+</head>
+<body>
+    <!-- Cabeçalho -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/Imagens/Intelicampo.png" alt="Intelicampo Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="informacoes.html">Solicitar Informações</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Formulário de Contato -->
+    <section class="formulario">
+        <div class="container">
+            <h2>Solicite Mais Informações Sobre o Intelicampo</h2>
+            <p>Preencha o formulário abaixo e nossa equipe entrará em contato para apresentar a solução ideal para sua fazenda.</p>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control" placeholder="(XX) 9 XXXX-XXXX" required>
+                </div>
+                <div class="form-group">
+                    <label for="tipo">Tipo de Propriedade:</label>
+                    <select id="tipo" name="tipo" class="form-control" required>
+                        <option value="corte">Corte</option>
+                        <option value="leite">Leite</option>
+                        <option value="ambos">Ambos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tamanho">Tamanho do Rebanho:</label>
+                    <select id="tamanho" name="tamanho" class="form-control" required>
+                        <option value="ate100">Até 100 cabeças</option>
+                        <option value="100-500">100-500 cabeças</option>
+                        <option value="acima500">Acima de 500 cabeças</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" id="button_submit" class="btn btn-primary">Enviar Solicitação</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Email: pedro.leite53@gmail.com | Telefone: (83) 98663-7555</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- Importa o SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../Javascript/scriptInformacoes.js"></script>
+</body>
+</html>

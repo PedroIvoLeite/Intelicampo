@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria - Intelicampo</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link href="../assets/Css/styleGaleria.css" rel="stylesheet">
+        <link rel="icon" href="../assets/Imagens/Intelicampo.png" type="image/png">
+
+    </head>
+    <body>
+        <!-- Navbar Melhorado -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../assets/Imagens/Intelicampo.png" alt="Intelicampo Logo">
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active"
+                                href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="informacoes.html">Solicitar
+                                Informações</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Seção da Galeria -->
+        <section class="galeria">
+            <div class="container">
+                <h2>Galeria</h2>
+                <div class="row">
+                    <!-- Foto 1 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalNavegacao">
+                            <img src="../assets/Imagens/Navegacao.jpg" alt="Navegação">
+                            <div class="card-body">
+                                <h3 class="card-title">Navegação</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 2 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalDashboard">
+                            <img src="../assets/Imagens/Dashboard.jpg" alt="Dashboard">
+                            <div class="card-body">
+                                <h3 class="card-title">Dashboard</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 3 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalHistoricoPeso">
+                            <img src="../assets/Imagens/Historico Peso.jpg"
+                                alt="Histórico de Peso">
+                            <div class="card-body">
+                                <h3 class="card-title">Histórico de Ganho de
+                                    Peso</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 4 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalFinanceiro">
+                            <img src="../assets/Imagens/Financeiro.jpg" alt="Controle Financeiro">
+                            <div class="card-body">
+                                <h3 class="card-title">Controle Financeiro</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 5 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalPiquete">
+                            <img src="../assets/Imagens/Piquete.jpg" alt="Piquete">
+                            <div class="card-body">
+                                <h3 class="card-title">Piquete</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 6 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalLote">
+                            <img src="../assets/Imagens/Lote.jpg" alt="Lote de Animais Lactantes">
+                            <div class="card-body">
+                                <h3 class="card-title">Lote de Animais
+                                    Lactantes</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 7 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalManejos">
+                            <img src="../assets/Imagens/manejos.jpg" alt="Manejos">
+                            <div class="card-body">
+                                <h3 class="card-title">Manejos</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 8 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalTarefas">
+                            <img src="../assets/Imagens/tarefas.jpg" alt="Calendário de Tarefas">
+                            <div class="card-body">
+                                <h3 class="card-title">Calendário de
+                                    Tarefas</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Foto 9 -->
+                    <div class="col-md-4">
+                        <div class="card" data-toggle="modal"
+                            data-target="#modalParametros">
+                            <img src="../assets/Imagens/Parametros.jpg"
+                                alt="Parâmetros do Sistema">
+                            <div class="card-body">
+                                <h3 class="card-title">Parâmetros do
+                                    Sistema</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals para exibir as imagens em tamanho maior -->
+        <!-- Modal Navegação -->
+        <div class="modal fade" id="modalNavegacao" tabindex="-1"
+            aria-labelledby="modalNavegacaoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Navegacao.jpg" alt="Navegação">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Dashboard -->
+        <div class="modal fade" id="modalDashboard" tabindex="-1"
+            aria-labelledby="modalDashboardLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Dashboard.jpg" alt="Dashboard">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Histórico de Peso -->
+        <div class="modal fade" id="modalHistoricoPeso" tabindex="-1"
+            aria-labelledby="modalHistoricoPesoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Historico Peso.jpg" alt="Histórico de Peso">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Financeiro -->
+        <div class="modal fade" id="modalFinanceiro" tabindex="-1"
+            aria-labelledby="modalFinanceiroLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Financeiro.jpg" alt="Controle Financeiro">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Piquete -->
+        <div class="modal fade" id="modalPiquete" tabindex="-1"
+            aria-labelledby="modalPiqueteLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Piquete.jpg" alt="Piquete">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Lote -->
+        <div class="modal fade" id="modalLote" tabindex="-1"
+            aria-labelledby="modalLoteLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Lote.jpg" alt="Lote de Animais Lactantes">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Manejos -->
+        <div class="modal fade" id="modalManejos" tabindex="-1"
+            aria-labelledby="modalManejosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/manejos.jpg" alt="Manejos">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Tarefas -->
+        <div class="modal fade" id="modalTarefas" tabindex="-1"
+            aria-labelledby="modalTarefasLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/tarefas.jpg" alt="Calendário de Tarefas">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Parâmetros -->
+        <div class="modal fade" id="modalParametros" tabindex="-1"
+            aria-labelledby="modalParametrosLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="../assets/Imagens/Parametros.jpg" alt="Parâmetros do Sistema">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <div class="container">
+                <p>Pronto para Transformar Sua Fazenda? <a
+                        href="informacoes.html">Solicite Mais
+                        Informações!</a></p>
+                <div class="contato">
+                    <p>Email: contato@intelicampo.com.br | Telefone: (83)
+                        98663-7555</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
